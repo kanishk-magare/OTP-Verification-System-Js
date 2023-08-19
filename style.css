@@ -1,0 +1,172 @@
+*body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: #4071F4;
+    font-family: 'Lunasima', sans-serif;
+    color: #fff;
+}
+
+#line {
+    border-radius: 50px;
+    font-size: 400px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#otp {
+    position: absolute;
+    line-height: 1.4;
+    top: 140px;
+    left: 140px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#container {
+    border: 1px solid white;
+    background-color: #fff;
+    border-radius: 50px;
+    height: 400px;
+    width: 400px;
+    text-transform: uppercase;
+    /* display: flex; */
+    position: absolute;
+    top: 110px;
+    left: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#input {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+
+}
+
+input {
+    border-radius: 10px;
+    background-color: #4071F4;
+    border: 1px solid #4071F4;
+    font-size: 28px;
+    color: #fff;
+
+
+}
+
+#container h2 {
+    color: black;
+}
+
+button {
+    margin-top: 40px;
+    height: 70px;
+    border: 3px solid #4071F4;
+    width: 80%;
+    background-color: floralwhite;
+    color: #4071F4;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2.5;
+}
+
+
+#circle {
+    height: 100px;
+    width: 100px;
+    background-color: #4071F4;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circle i {
+    color: #fff;
+    font-size: 50px;
+}
+
+input {
+    text-align: center;
+}
+
+button:hover {
+    border: 3px solid #4071F4;
+    background-color: #4071F4;
+    color: white;
+    font-weight: 600;
+}
+
+#generate {
+    border: 4px solid #0f4cf1;
+    width: 150px;
+    position: absolute;
+    top: 480px;
+    right: 12%;
+}
+
+#credit {
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-size: 18px;
+}
+
+#animateh1,
+#credit {
+    animation-name: descendAnimation;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* Keeps the final style of the animation */
+}
+
+@keyframes descendAnimation {
+    from {
+        transform: translateY(-20px);
+        /* Initial position */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        /* Final position */
+        opacity: 1;
+    }
+}
+
+#line {
+    animation-name: lineAnimation;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    /* Keeps the final style of the animation */
+}
+
+@keyframes lineAnimation {
+    from {
+        transform: translateX(600px);
+        /* Initial position */
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        /* Final position */
+        opacity: 1;
+    }
+}
